@@ -1,4 +1,4 @@
-import React,  {useState, useEffect} from 'react';
+import React, { useState, useEffect } from "react";
 
 // import {CopyToClipBoard} from 'react-copy-to-clipboard'
 
@@ -13,24 +13,27 @@ export default function App() {
     "#a42963",
     "#0b6a88",
     "#f89e4f",
-    "#ec015a"
+    "#ec015a",
   ];
 
   const [background, setBackground] = useState("#071415");
   const [current, setCurrent] = useState(null);
 
   return (
-    <div className="App" style={{background: background}}>
+    <div className="App" style={{ background: background }}>
       {current !== null && <h1>Copied {current}</h1>}
+
       <div className="container">
         {colors.map((color, index) => (
-          <div key={index} className='card'>
-            <div className="box">
-
-            </div>
+          <div key={index} className="card">
+            <div style={{
+              background: color,
+              filter: "brightness(85%)",
+              boxShadow: color === background ? "0 0 5px #000" : ""
+            }} className="box" onClick={() => setBackground(color)} />
           </div>
         ))}
-      </div>     
+      </div>
     </div>
   );
 }
