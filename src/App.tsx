@@ -1,26 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React,  {useState, useEffect} from 'react';
 
-function App() {
+// import {CopyToClipBoard} from 'react-copy-to-clipboard'
+
+export default function App() {
+  const colors = [
+    "#9853a1",
+    "#f063a4",
+    "#2dc5f4",
+    "#fcee21",
+    "#f16164",
+    "#70327e",
+    "#a42963",
+    "#0b6a88",
+    "#f89e4f",
+    "#ec015a"
+  ];
+
+  const [background, setBackground] = useState("#071415");
+  const [current, setCurrent] = useState(null);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{background: background}}>
+      {current !== null && <h1>Copied {current}</h1>}
+      <div className="container">
+        {colors.map((color, index) => (
+          <div key={index} className='card'>
+            <div className="box">
+
+            </div>
+          </div>
+        ))}
+      </div>     
     </div>
   );
 }
-
-export default App;
