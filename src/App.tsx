@@ -17,7 +17,7 @@ export default function App() {
   ];
 
   const [background, setBackground] = useState("#071415");
-  const [current, setCurrent,] = useState(null);
+  const [current, setCurrent,] = useState<string | null>(null);
   
   useEffect(() => {
     const timeoutId = setTimeout(() => {
