@@ -8,10 +8,12 @@ Color palette is a simple project created in <a href ="https://www.youtube.com/w
   
   ![color-palette-gif](https://user-images.githubusercontent.com/80779259/154696723-be2b49c2-b6fb-4e3c-8a9e-4b890df01cdb.gif)
   
-  ### How to use
+  ### How to use it
   
+  - Open the project by clicking [here](https://nathanbalthazar.github.io/color-palette/)
   - Click on any color to visualize it
   - Click on the color code to copy it
+
 
 ## Technologies used in the project
   - [ReactJS](https://reactjs.org)
