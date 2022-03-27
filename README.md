@@ -18,3 +18,4 @@ Color palette is a project created in <a href ="https://www.youtube.com/watch?v=
 ## :rocket: Technologies:
   - [ReactJS](https://reactjs.org)
   - [TypeScript](https://www.typescriptlang.org/)
+  - [Styled Components](https://styled-components.com/)
